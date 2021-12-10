@@ -1,0 +1,30 @@
+SECRET_KEY: 'django-insecure-rf9&m#bwv9!n_mr3q7ckn#dzpe9k@dp=vx(e@)1jcsg!k1#0w('
+DEBUG: 'True'
+ALLOWED_HOSTS: ['*']
+postgres_database:
+  username: 'doadmin'
+  password: 'AKLjQVuGpoGQ1e3a'
+  host: 'db-postgresql-sfo2-60935-do-user-10277346-0.b.db.ondigitalocean.com'
+  port: '25060'
+  database: 'defaultdb'
+  sslmode: 'require'
+newyork_times:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster0.ngjps.mongodb.net/newyorktimes'
+  database_name: 'newyorktimes'
+  collection_name: 'processed_news_article'
+cnbc:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster1.ngjps.mongodb.net/cnbc'
+  database_name: 'cnbc'
+  collection_name: 'processed_news_article'
+newyork_times_database_details:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster0.ngjps.mongodb.net/newyorktimes'
+  db_name : 'newyorktimes'
+  user_name : 'dataminingadmin'
+  password : 'fall2021project'
+  collection_name: 'news_articles'
+cnbc_database_details:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster1.ngjps.mongodb.net/cnbc'
+  db_name : 'cnbc'
+  user_name : 'dataminingadmin'
+  password : 'fall2021project'
+  collection_name: 'news_articles'
