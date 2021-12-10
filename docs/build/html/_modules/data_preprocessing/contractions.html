@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data_preprocessing.contractions &#8212; Abraca-Data Project 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for data_preprocessing.contractions</h1><div class="highlight"><pre>
+<span></span><span class="c1"># contraction map dictionary</span>
+<span class="n">CONTRACTION_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ain&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;is not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;aren&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;are not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;can&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;cannot&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;can&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;cannot have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&#39;cause&quot;</span><span class="p">:</span> <span class="s2">&quot;because&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;could&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;could have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;couldn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;could not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;couldn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;could not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;didn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;did not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;doesn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;does not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;don&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;do not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hadn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;had not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hadn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;had not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hasn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;has not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;haven&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;have not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;he&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;he would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;he&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;he would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;he&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;he will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;he&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;he he will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;he&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;he is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;how&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;how did&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;how&#39;d&#39;y&quot;</span><span class="p">:</span> <span class="s2">&quot;how do you&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;how&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;how will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;how&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;how is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;I would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;I would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;I will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;I will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;m&quot;</span><span class="p">:</span> <span class="s2">&quot;I am&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;I have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;i would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;i would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;i will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;i will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;m&quot;</span><span class="p">:</span> <span class="s2">&quot;i am&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;i&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;i have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;isn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;is not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;it&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;it would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;it&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;it would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;it&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;it will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;it&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;it will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;it&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;it is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;let&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;let us&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ma&#39;am&quot;</span><span class="p">:</span> <span class="s2">&quot;madam&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mayn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;may not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;might&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;might have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mightn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;might not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mightn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;might not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;must&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;must have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mustn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;must not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mustn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;must not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;needn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;need not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;needn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;need not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;o&#39;clock&quot;</span><span class="p">:</span> <span class="s2">&quot;of the clock&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;oughtn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;ought not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;oughtn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;ought not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;shan&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;shall not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sha&#39;n&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;shall not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;shan&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;shall not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;she&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;she would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;she&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;she would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;she&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;she will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;she&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;she will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;she&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;she is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;should&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;should have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;shouldn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;should not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;shouldn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;should not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;so&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;so have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;so&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;so as&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;that&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;that would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;that&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;that would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;that&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;that is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;there&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;there would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;there&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;there would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;there&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;there is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;they would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;they would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;they will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;they will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;re&quot;</span><span class="p">:</span> <span class="s2">&quot;they are&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;they&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;they have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;to&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;to have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;wasn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;was not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;we would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;we would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;we will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;we will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;re&quot;</span><span class="p">:</span> <span class="s2">&quot;we are&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;we&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;we have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;weren&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;were not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;what&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;what will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;what&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;what will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;what&#39;re&quot;</span><span class="p">:</span> <span class="s2">&quot;what are&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;what&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;what is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;what&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;what have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;when&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;when is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;when&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;when have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;where&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;where did&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;where&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;where is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;where&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;where have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;who&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;who will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;who&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;who will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;who&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;who is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;who&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;who have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;why&#39;s&quot;</span><span class="p">:</span> <span class="s2">&quot;why is&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;why&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;why have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;will&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;won&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;will not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;won&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;will not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;would&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;wouldn&#39;t&quot;</span><span class="p">:</span> <span class="s2">&quot;would not&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;wouldn&#39;t&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;would not have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;y&#39;all&quot;</span><span class="p">:</span> <span class="s2">&quot;you all&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;y&#39;all&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;you all would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;y&#39;all&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;you all would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;y&#39;all&#39;re&quot;</span><span class="p">:</span> <span class="s2">&quot;you all are&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;y&#39;all&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;you all have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;d&quot;</span><span class="p">:</span> <span class="s2">&quot;you would&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;d&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;you would have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;ll&quot;</span><span class="p">:</span> <span class="s2">&quot;you will&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;ll&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;you will have&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;re&quot;</span><span class="p">:</span> <span class="s2">&quot;you are&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;you&#39;ve&quot;</span><span class="p">:</span> <span class="s2">&quot;you have&quot;</span>
+<span class="p">}</span>
+
+<div class="viewcode-block" id="get_all_contractions"><a class="viewcode-back" href="../../index.html#data_preprocessing.contractions.get_all_contractions">[docs]</a><span class="k">def</span> <span class="nf">get_all_contractions</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Method to get all contraction</span>
+
+<span class="sd">    :return: dict</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">CONTRACTION_MAP</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Abraca-Data Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Abraca-Data.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

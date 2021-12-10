@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data_preprocessing.news_articles &#8212; Abraca-Data Project 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for data_preprocessing.news_articles</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="c1"># third party imports</span>
+<span class="kn">from</span> <span class="nn">newspaper</span> <span class="kn">import</span> <span class="n">Article</span>
+<span class="kn">import</span> <span class="nn">xmltodict</span>
+
+
+<span class="c1"># function to parse web articles</span>
+<div class="viewcode-block" id="parse_article"><a class="viewcode-back" href="../../index.html#data_preprocessing.news_articles.parse_article">[docs]</a><span class="k">def</span> <span class="nf">parse_article</span><span class="p">(</span><span class="n">article_url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    function which extracts information given a web url</span>
+
+<span class="sd">    :param article_url: article url</span>
+<span class="sd">    :return: json record</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># passing the article url</span>
+    <span class="n">article</span> <span class="o">=</span> <span class="n">Article</span><span class="p">(</span><span class="n">article_url</span><span class="p">)</span>
+
+    <span class="c1"># downloading the data</span>
+    <span class="n">article</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
+
+    <span class="c1"># parsing the article</span>
+    <span class="n">article</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
+
+    <span class="c1"># processing natural language processing on article</span>
+    <span class="n">article</span><span class="o">.</span><span class="n">nlp</span><span class="p">()</span>
+
+    <span class="c1"># creating a json record</span>
+    <span class="n">article_record</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;article_title&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">title</span><span class="p">,</span>  <span class="c1"># article title</span>
+        <span class="s2">&quot;article_authors&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">authors</span><span class="p">,</span>  <span class="c1"># article newspaper_authors</span>
+        <span class="s2">&quot;article_published_date&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">article</span><span class="o">.</span><span class="n">publish_date</span><span class="p">),</span>  <span class="c1"># article published data</span>
+        <span class="s2">&quot;article_text&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>  <span class="c1"># article web text</span>
+        <span class="s2">&quot;images_link&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">top_image</span><span class="p">,</span>  <span class="c1"># article image link</span>
+        <span class="s2">&quot;video_link&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">movies</span><span class="p">,</span>  <span class="c1"># article video link</span>
+        <span class="s2">&quot;article_summary&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">summary</span><span class="p">,</span>  <span class="c1"># article summary</span>
+        <span class="s2">&quot;article_keywords&quot;</span><span class="p">:</span> <span class="n">article</span><span class="o">.</span><span class="n">keywords</span><span class="p">,</span>  <span class="c1"># keywords associated with articles</span>
+        <span class="s2">&quot;article_url&quot;</span><span class="p">:</span> <span class="n">article_url</span>  <span class="c1"># article url</span>
+    <span class="p">}</span>
+
+    <span class="c1"># return json record</span>
+    <span class="k">return</span> <span class="n">article_record</span></div>
+
+
+<span class="c1"># function to extract all article web links</span>
+<div class="viewcode-block" id="extract_rss_feeds"><a class="viewcode-back" href="../../index.html#data_preprocessing.news_articles.extract_rss_feeds">[docs]</a><span class="k">def</span> <span class="nf">extract_rss_feeds</span><span class="p">(</span><span class="n">xml_url</span><span class="p">,</span> <span class="o">*</span><span class="n">header_value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    function to extract all article web links from an xml file</span>
+<span class="sd">    :param xml_url: xml link</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">header_value</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">header_value</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">xml_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">xml_url</span><span class="p">)</span>
+
+    <span class="c1"># getting the web page data</span>
+    <span class="c1"># parsing and storing the data in to a dictionary</span>
+    <span class="n">dict_data</span> <span class="o">=</span> <span class="n">xmltodict</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+
+    <span class="c1"># getting all the items from rss</span>
+    <span class="n">all_parsed_items</span> <span class="o">=</span> <span class="n">dict_data</span><span class="p">[</span><span class="s1">&#39;rss&#39;</span><span class="p">][</span><span class="s1">&#39;channel&#39;</span><span class="p">][</span><span class="s1">&#39;item&#39;</span><span class="p">]</span>
+
+    <span class="c1"># list to store all href</span>
+    <span class="n">all_href_links</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># iterating through all the parsed items</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_parsed_items</span><span class="p">):</span>
+        <span class="c1"># getting and storing</span>
+        <span class="n">link_href</span> <span class="o">=</span> <span class="n">all_parsed_items</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="s1">&#39;link&#39;</span><span class="p">]</span>
+        <span class="n">all_href_links</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">link_href</span><span class="p">)</span>
+
+    <span class="n">all_articles_records</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># iterating all the links</span>
+    <span class="k">for</span> <span class="n">href_link</span> <span class="ow">in</span> <span class="n">all_href_links</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># passing the article link to parsing function</span>
+            <span class="n">article_data</span> <span class="o">=</span> <span class="n">parse_article</span><span class="p">(</span><span class="n">href_link</span><span class="p">)</span>
+
+            <span class="c1"># storing the results from functions from dictionary</span>
+            <span class="n">all_articles_records</span><span class="p">[</span><span class="n">href_link</span><span class="p">]</span> <span class="o">=</span> <span class="n">article_data</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="c1"># logging the error</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;This is an error message&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">all_articles_records</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Abraca-Data Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Abraca-Data.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

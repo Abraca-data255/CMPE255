@@ -1,1 +1,5 @@
 /data_preprocessing/colab_api.py
+/project_apis/serverless_zappa/env/
+/project_apis/serverless_zappa/.idea/
+/project_apis/transfomers_api/env/
+/project_apis/transfomers_api/assets/model_state_dict.bin
