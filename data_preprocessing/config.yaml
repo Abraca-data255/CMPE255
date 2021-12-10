@@ -1,0 +1,12 @@
+newyork_times_database_details:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster0.ngjps.mongodb.net/newyorktimes'
+  db_name : 'newyorktimes'
+  user_name : 'dataminingadmin'
+  password : 'fall2021project'
+  collection_name: 'news_articles'
+cnbc_database_details:
+  connection_string: 'mongodb+srv://dataminingadmin:fall2021project@cluster1.ngjps.mongodb.net/cnbc'
+  db_name : 'cnbc'
+  user_name : 'dataminingadmin'
+  password : 'fall2021project'
+  collection_name: 'news_articles'
