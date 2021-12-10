@@ -8,6 +8,8 @@ from bs4 import BeautifulSoup
 def new_york_times_sitemap():
     """
     Functions return article links and save them in excel file
+
+    :return: excel file
     """
 
     # initializing the logger
@@ -66,6 +68,8 @@ def new_york_times_sitemap():
 def cnbc_sitemap():
     """
     Functions return article links and save them in excel file
+
+    :return: excel file
     """
 
     # initializing the logger
