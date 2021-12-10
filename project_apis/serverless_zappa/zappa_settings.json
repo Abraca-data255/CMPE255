@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "django_settings": "project_api.settings",
+        "profile_name": "default",
+        "project_name": "serverless-zapp",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-wa29oraxn",
+        "aws_region": "us-west-2"
+    }
+}
