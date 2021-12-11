@@ -5,15 +5,21 @@ from mongoengine import connect, disconnect
 from tqdm import tqdm
 import glob
 # module imports
-from news_articles import parse_article
-from database_records import NewsArticles
-from utils import check_record_exist
+from .news_articles import parse_article
+from .database_records import NewsArticles
+from .utils import check_record_exist
 
 
 def add_records_to_database(database_config_keys,
                             source_name,
                             article_dataframe):
+    """
+    function to add records in to database
 
+    :param database_config_keys: database config yaml file
+    :param source_name: newspaper name
+    :param article_dataframe: newspaper data
+    """
     # connect to database
     connect(db=database_config_keys['db_name'],
             username=database_config_keys['user_name'],
@@ -60,35 +66,4 @@ if __name__ == '__main__':
 
     with open('config.yaml') as f:
         config_dict = yaml.safe_load(f)
-
-    '''
-    # list all the files
-    nytimes_files = glob.glob(
-        "/Users/aryanjadon/Desktop/256_Final_Project/CMPE_256/data_preprocessing/data_collection/sitemap/newyork_times/*.xlsx")
-
-    for current_file in nytimes_files:
-        try:
-            print(current_file)
-            current_dataframe = pd.read_excel(current_file)
-            add_records_to_database(config_dict['newyork_times_database_details'],
-                                    "Newyork Times",
-                                    current_dataframe)
-        except Exception as e:
-            print(e)
-    '''
-
-    '''
-    cnbc_files = glob.glob(
-        "/Users/aryanjadon/Desktop/256_Final_Project/CMPE_256/data_preprocessing/data_collection/sitemap/cnbc/*.xlsx")
-
-    for current_file in cnbc_files:
-        try:
-            print(current_file)
-            current_dataframe = pd.read_excel(current_file)
-            add_records_to_database(config_dict['cnbc_database_details'],
-                                    "CNBC",
-                                    current_dataframe)
-        except Exception as e:
-            print(e)
-    '''
 

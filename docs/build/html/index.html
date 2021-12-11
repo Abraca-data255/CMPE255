@@ -36,180 +36,9 @@
 <div class="toctree-wrapper compound">
 </div>
 </section>
-<section id="module-data_preprocessing.data_preprocessing">
-<span id="data-preprocessing-module-functions"></span><h1>Data Preprocessing Module Functions<a class="headerlink" href="#module-data_preprocessing.data_preprocessing" title="Permalink to this headline">¶</a></h1>
+<section id="module-data_preprocessing.data_collection_scripts.sitemap_crawlers">
+<span id="data-preprocessing-module-functions"></span><h1>Data Preprocessing Module Functions<a class="headerlink" href="#module-data_preprocessing.data_collection_scripts.sitemap_crawlers" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.expand_contractions">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">expand_contractions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#expand_contractions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.expand_contractions" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to expand the contractions from the text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>expanded contractions</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.extract_urls">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">extract_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#extract_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.extract_urls" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for extracting the url from text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>transformed text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.find_persons">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">find_persons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#find_persons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.find_persons" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for extracting the person names from text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>transformed text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.lemmatize_text">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">lemmatize_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#lemmatize_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.lemmatize_text" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for lemmatize text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>transformed text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.lower_text">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">lower_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#lower_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.lower_text" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for converting the text to lower case</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>transformed text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.named_entity_recognition">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">named_entity_recognition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#named_entity_recognition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.named_entity_recognition" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for named entity recognition</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>dict with named entity entries</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.remove_accented_chars">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">remove_accented_chars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#remove_accented_chars"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.remove_accented_chars" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to remove accented characters from text, e.g. café</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>filtered text with accented text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.remove_html_tags">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">remove_html_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#remove_html_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.remove_html_tags" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to remove html tags</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>filtered text with removed html components</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.remove_special_characters">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">remove_special_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_digits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#remove_special_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.remove_special_characters" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to remove special characters from the given text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> – given text</p></li>
-<li><p><strong>remove_digits</strong> – boolean parameter for removing digits</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>filtered text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.remove_stopwords">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">remove_stopwords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#remove_stopwords"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.remove_stopwords" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to remove stop words from the given text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>filtered text with stop words</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.remove_urls">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">remove_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#remove_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.remove_urls" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to remove url from given text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>filtered text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.stemming_text">
-<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">stemming_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing.html#stemming_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing.stemming_text" title="Permalink to this definition">¶</a></dt>
-<dd><p>function for stemming the text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>text</strong> – given text</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>transformed text</p>
-</dd>
-</dl>
-</dd></dl>
-
-<span class="target" id="module-data_preprocessing.data_collection_scripts.sitemap_crawlers"></span><dl class="py function">
 <dt class="sig sig-object py" id="data_preprocessing.data_collection_scripts.sitemap_crawlers.cnbc_sitemap">
 <span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_collection_scripts.sitemap_crawlers.</span></span><span class="sig-name descname"><span class="pre">cnbc_sitemap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_collection_scripts/sitemap_crawlers.html#cnbc_sitemap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_collection_scripts.sitemap_crawlers.cnbc_sitemap" title="Permalink to this definition">¶</a></dt>
 <dd><p>Functions return article links and save them in excel file</p>
@@ -227,6 +56,203 @@
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>excel file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.contractions"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.contractions.get_all_contractions">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.contractions.</span></span><span class="sig-name descname"><span class="pre">get_all_contractions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/contractions.html#get_all_contractions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.contractions.get_all_contractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to get all contraction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.data_collection"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_collection.add_records_to_database">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_collection.</span></span><span class="sig-name descname"><span class="pre">add_records_to_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database_config_keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">article_dataframe</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_collection.html#add_records_to_database"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_collection.add_records_to_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to add records in to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database_config_keys</strong> – database config yaml file</p></li>
+<li><p><strong>source_name</strong> – newspaper name</p></li>
+<li><p><strong>article_dataframe</strong> – newspaper data</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.data_preprocessing_functions"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.expand_contractions">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">expand_contractions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#expand_contractions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.expand_contractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to expand the contractions from the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>expanded contractions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.extract_urls">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">extract_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#extract_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.extract_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for extracting the url from text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.find_persons">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">find_persons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#find_persons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.find_persons" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for extracting the person names from text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.lemmatize_text">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">lemmatize_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#lemmatize_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.lemmatize_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for lemmatize text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.lower_text">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">lower_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#lower_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.lower_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for converting the text to lower case</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.named_entity_recognition">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">named_entity_recognition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#named_entity_recognition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.named_entity_recognition" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for named entity recognition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dict with named entity entries</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.remove_accented_chars">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">remove_accented_chars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#remove_accented_chars"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.remove_accented_chars" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to remove accented characters from text, e.g. café</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>filtered text with accented text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.remove_html_tags">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">remove_html_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#remove_html_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.remove_html_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to remove html tags</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>filtered text with removed html components</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.remove_special_characters">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">remove_special_characters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_digits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#remove_special_characters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.remove_special_characters" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to remove special characters from the given text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – given text</p></li>
+<li><p><strong>remove_digits</strong> – boolean parameter for removing digits</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>filtered text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.remove_stopwords">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">remove_stopwords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#remove_stopwords"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.remove_stopwords" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to remove stop words from the given text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>filtered text with stop words</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.remove_urls">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">remove_urls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#remove_urls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.remove_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to remove url from given text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>filtered text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.data_preprocessing_functions.stemming_text">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing_functions.</span></span><span class="sig-name descname"><span class="pre">stemming_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/data_preprocessing_functions.html#stemming_text"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.data_preprocessing_functions.stemming_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>function for stemming the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – given text</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transformed text</p>
 </dd>
 </dl>
 </dd></dl>
@@ -264,8 +290,12 @@
 <span class="target" id="module-data_preprocessing.news_articles"></span><dl class="py function">
 <dt class="sig sig-object py" id="data_preprocessing.news_articles.extract_rss_feeds">
 <span class="sig-prename descclassname"><span class="pre">data_preprocessing.news_articles.</span></span><span class="sig-name descname"><span class="pre">extract_rss_feeds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xml_url</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">header_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/news_articles.html#extract_rss_feeds"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.news_articles.extract_rss_feeds" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to extract all article web links from an xml file
-:param xml_url: xml link</p>
+<dd><p>function to extract all article web links from an xml file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>xml_url</strong> – xml link</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
@@ -278,6 +308,65 @@
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>json record</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.processing_records"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.processing_records.process_records">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.processing_records.</span></span><span class="sig-name descname"><span class="pre">process_records</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database_connection_params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/processing_records.html#process_records"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.processing_records.process_records" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to process database records</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>database_connection_params</strong> – database connection strings</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.rule_based_sentimental_analysis"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.rule_based_sentimental_analysis.text_blob_sentiment">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.rule_based_sentimental_analysis.</span></span><span class="sig-name descname"><span class="pre">text_blob_sentiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">given_sentence</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/rule_based_sentimental_analysis.html#text_blob_sentiment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.rule_based_sentimental_analysis.text_blob_sentiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to analyze the text blob sentiment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>given_sentence</strong> – sentence</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>sentiment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.rule_based_sentimental_analysis.vader_sentiment">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.rule_based_sentimental_analysis.</span></span><span class="sig-name descname"><span class="pre">vader_sentiment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">given_sentence</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/rule_based_sentimental_analysis.html#vader_sentiment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.rule_based_sentimental_analysis.vader_sentiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>function to analyze the vader sentiment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>given_sentence</strong> – sentence</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>sentiment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-data_preprocessing.utils"></span><dl class="py function">
+<dt class="sig sig-object py" id="data_preprocessing.utils.check_record_exist">
+<span class="sig-prename descclassname"><span class="pre">data_preprocessing.utils.</span></span><span class="sig-name descname"><span class="pre">check_record_exist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">database_credentials</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">article_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">processed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/data_preprocessing/utils.html#check_record_exist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#data_preprocessing.utils.check_record_exist" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>function to check if a record exists in a database or not</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>database_credentials</strong> – database credentials</p></li>
+<li><p><strong>article_url</strong> – article url</p></li>
+<li><p><strong>processed</strong> – boolean value to process or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>boolean value</p>
 </dd>
 </dl>
 </dd></dl>

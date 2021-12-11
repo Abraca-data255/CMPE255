@@ -2,7 +2,7 @@
 import re
 import nltk
 from nltk.corpus import stopwords
-from contractions import CONTRACTION_MAP
+from .contractions import get_all_contractions
 import spacy
 import unidecode
 
@@ -38,14 +38,14 @@ def remove_accented_chars(text):
 
 
 # function to expand the contractions from the text
-def expand_contractions(text, contraction_mapping=CONTRACTION_MAP):
+def expand_contractions(text):
     """
     function to expand the contractions from the text
 
     :param text: given text
-    :param contraction_mapping: given contraction mapping
     :return: expanded contractions
     """
+    contraction_mapping = get_all_contractions()
     contractions_pattern = re.compile('({})'.format('|'.join(contraction_mapping.keys())),
                                       flags=re.IGNORECASE | re.DOTALL)
 

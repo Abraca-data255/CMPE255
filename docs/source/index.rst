@@ -13,19 +13,35 @@ Abraca-Data Project's documentation
 
 Data Preprocessing Module Functions
 ===================================
-.. automodule:: data_preprocessing.data_preprocessing
-   :members:
 
 .. automodule:: data_preprocessing.data_collection_scripts.sitemap_crawlers
    :members:
 
+.. automodule:: data_preprocessing.contractions
+   :members:
+
 .. automodule:: data_preprocessing.data_collection
+   :members:
+
+.. automodule:: data_preprocessing.data_preprocessing_functions
    :members:
 
 .. automodule:: data_preprocessing.database_records
    :members:
 
 .. automodule:: data_preprocessing.news_articles
+   :members:
+
+.. automodule:: data_preprocessing.processing_pipelines
+   :members:
+
+.. automodule:: data_preprocessing.processing_records
+   :members:
+
+.. automodule:: data_preprocessing.rule_based_sentimental_analysis
+   :members:
+
+.. automodule:: data_preprocessing.utils
    :members:
 
 Indices and tables

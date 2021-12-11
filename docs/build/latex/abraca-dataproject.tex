@@ -79,242 +79,7 @@
 
 
 \chapter{Data Preprocessing Module Functions}
-\label{\detokenize{index:module-data_preprocessing.data_preprocessing}}\label{\detokenize{index:data-preprocessing-module-functions}}\index{module@\spxentry{module}!data\_preprocessing.data\_preprocessing@\spxentry{data\_preprocessing.data\_preprocessing}}\index{data\_preprocessing.data\_preprocessing@\spxentry{data\_preprocessing.data\_preprocessing}!module@\spxentry{module}}\index{expand\_contractions() (in module data\_preprocessing.data\_preprocessing)@\spxentry{expand\_contractions()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.expand_contractions}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{expand\_contractions}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function to expand the contractions from the text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-expanded contractions
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{extract\_urls() (in module data\_preprocessing.data\_preprocessing)@\spxentry{extract\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.extract_urls}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{extract\_urls}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for extracting the url from text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-transformed text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{find\_persons() (in module data\_preprocessing.data\_preprocessing)@\spxentry{find\_persons()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.find_persons}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{find\_persons}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for extracting the person names from text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-transformed text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{lemmatize\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{lemmatize\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.lemmatize_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{lemmatize\_text}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for lemmatize text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-transformed text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{lower\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{lower\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.lower_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{lower\_text}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for converting the text to lower case
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-transformed text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{named\_entity\_recognition() (in module data\_preprocessing.data\_preprocessing)@\spxentry{named\_entity\_recognition()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.named_entity_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{named\_entity\_recognition}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for named entity recognition
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-dict with named entity entries
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{remove\_accented\_chars() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_accented\_chars()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.remove_accented_chars}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{remove\_accented\_chars}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function to remove accented characters from text, e.g. café
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-filtered text with accented text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{remove\_html\_tags() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_html\_tags()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.remove_html_tags}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{remove\_html\_tags}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function to remove html tags
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-filtered text with removed html components
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{remove\_special\_characters() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_special\_characters()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.remove_special_characters}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{remove\_special\_characters}}}{\emph{\DUrole{n}{text}}, \emph{\DUrole{n}{remove\_digits}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
-\sphinxAtStartPar
-function to remove special characters from the given text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{remove\_digits}} \textendash{} boolean parameter for removing digits
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-filtered text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{remove\_stopwords() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_stopwords()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.remove_stopwords}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{remove\_stopwords}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function to remove stop words from the given text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-filtered text with stop words
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{remove\_urls() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.remove_urls}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{remove\_urls}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function to remove url from given text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-filtered text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{stemming\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{stemming\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing.stemming_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing.}}\sphinxbfcode{\sphinxupquote{stemming\_text}}}{\emph{\DUrole{n}{text}}}{}
-\sphinxAtStartPar
-function for stemming the text
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-transformed text
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\phantomsection\label{\detokenize{index:module-data_preprocessing.data_collection_scripts.sitemap_crawlers}}\index{module@\spxentry{module}!data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}}\index{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}!module@\spxentry{module}}\index{cnbc\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{cnbc\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}}
+\label{\detokenize{index:module-data_preprocessing.data_collection_scripts.sitemap_crawlers}}\label{\detokenize{index:data-preprocessing-module-functions}}\index{module@\spxentry{module}!data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}}\index{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}!module@\spxentry{module}}\index{cnbc\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{cnbc\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{index:data_preprocessing.data_collection_scripts.sitemap_crawlers.cnbc_sitemap}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers.}}\sphinxbfcode{\sphinxupquote{cnbc\_sitemap}}}{}{}
@@ -339,6 +104,282 @@ Functions return article links and save them in excel file
 \item[{Returns}] \leavevmode
 \sphinxAtStartPar
 excel file
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.contractions}}\index{module@\spxentry{module}!data\_preprocessing.contractions@\spxentry{data\_preprocessing.contractions}}\index{data\_preprocessing.contractions@\spxentry{data\_preprocessing.contractions}!module@\spxentry{module}}\index{get\_all\_contractions() (in module data\_preprocessing.contractions)@\spxentry{get\_all\_contractions()}\spxextra{in module data\_preprocessing.contractions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.contractions.get_all_contractions}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.contractions.}}\sphinxbfcode{\sphinxupquote{get\_all\_contractions}}}{}{}
+\sphinxAtStartPar
+Method to get all contraction
+\begin{quote}\begin{description}
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+dict
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.data_collection}}\index{module@\spxentry{module}!data\_preprocessing.data\_collection@\spxentry{data\_preprocessing.data\_collection}}\index{data\_preprocessing.data\_collection@\spxentry{data\_preprocessing.data\_collection}!module@\spxentry{module}}\index{add\_records\_to\_database() (in module data\_preprocessing.data\_collection)@\spxentry{add\_records\_to\_database()}\spxextra{in module data\_preprocessing.data\_collection}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_collection.add_records_to_database}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_collection.}}\sphinxbfcode{\sphinxupquote{add\_records\_to\_database}}}{\emph{\DUrole{n}{database\_config\_keys}}, \emph{\DUrole{n}{source\_name}}, \emph{\DUrole{n}{article\_dataframe}}}{}
+\sphinxAtStartPar
+function to add records in to database
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{database\_config\_keys}} \textendash{} database config yaml file
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{source\_name}} \textendash{} newspaper name
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{article\_dataframe}} \textendash{} newspaper data
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.data_preprocessing_functions}}\index{module@\spxentry{module}!data\_preprocessing.data\_preprocessing\_functions@\spxentry{data\_preprocessing.data\_preprocessing\_functions}}\index{data\_preprocessing.data\_preprocessing\_functions@\spxentry{data\_preprocessing.data\_preprocessing\_functions}!module@\spxentry{module}}\index{expand\_contractions() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{expand\_contractions()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.expand_contractions}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{expand\_contractions}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function to expand the contractions from the text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+expanded contractions
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{extract\_urls() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{extract\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.extract_urls}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{extract\_urls}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for extracting the url from text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+transformed text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{find\_persons() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{find\_persons()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.find_persons}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{find\_persons}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for extracting the person names from text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+transformed text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{lemmatize\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{lemmatize\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.lemmatize_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{lemmatize\_text}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for lemmatize text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+transformed text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{lower\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{lower\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.lower_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{lower\_text}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for converting the text to lower case
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+transformed text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{named\_entity\_recognition() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{named\_entity\_recognition()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.named_entity_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{named\_entity\_recognition}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for named entity recognition
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+dict with named entity entries
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{remove\_accented\_chars() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_accented\_chars()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.remove_accented_chars}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{remove\_accented\_chars}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function to remove accented characters from text, e.g. café
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+filtered text with accented text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{remove\_html\_tags() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_html\_tags()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.remove_html_tags}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{remove\_html\_tags}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function to remove html tags
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+filtered text with removed html components
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{remove\_special\_characters() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_special\_characters()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.remove_special_characters}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{remove\_special\_characters}}}{\emph{\DUrole{n}{text}}, \emph{\DUrole{n}{remove\_digits}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\sphinxAtStartPar
+function to remove special characters from the given text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{remove\_digits}} \textendash{} boolean parameter for removing digits
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+filtered text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{remove\_stopwords() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_stopwords()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.remove_stopwords}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{remove\_stopwords}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function to remove stop words from the given text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+filtered text with stop words
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{remove\_urls() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.remove_urls}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{remove\_urls}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function to remove url from given text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+filtered text
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{stemming\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{stemming\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.data_preprocessing_functions.stemming_text}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.data\_preprocessing\_functions.}}\sphinxbfcode{\sphinxupquote{stemming\_text}}}{\emph{\DUrole{n}{text}}}{}
+\sphinxAtStartPar
+function for stemming the text
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{text}} \textendash{} given text
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+transformed text
 
 \end{description}\end{quote}
 
@@ -386,7 +427,12 @@ excel file
 \phantomsection\label{\detokenize{index:data_preprocessing.news_articles.extract_rss_feeds}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.news\_articles.}}\sphinxbfcode{\sphinxupquote{extract\_rss\_feeds}}}{\emph{\DUrole{n}{xml\_url}}, \emph{\DUrole{o}{*}\DUrole{n}{header\_value}}}{}
 \sphinxAtStartPar
 function to extract all article web links from an xml file
-:param xml\_url: xml link
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{xml\_url}} \textendash{} xml link
+
+\end{description}\end{quote}
 
 \end{fulllineitems}
 
@@ -404,6 +450,91 @@ function which extracts information given a web url
 \item[{Returns}] \leavevmode
 \sphinxAtStartPar
 json record
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.processing_records}}\index{module@\spxentry{module}!data\_preprocessing.processing\_records@\spxentry{data\_preprocessing.processing\_records}}\index{data\_preprocessing.processing\_records@\spxentry{data\_preprocessing.processing\_records}!module@\spxentry{module}}\index{process\_records() (in module data\_preprocessing.processing\_records)@\spxentry{process\_records()}\spxextra{in module data\_preprocessing.processing\_records}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.processing_records.process_records}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.processing\_records.}}\sphinxbfcode{\sphinxupquote{process\_records}}}{\emph{\DUrole{n}{database\_connection\_params}}}{}
+\sphinxAtStartPar
+function to process database records
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{database\_connection\_params}} \textendash{} database connection strings
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.rule_based_sentimental_analysis}}\index{module@\spxentry{module}!data\_preprocessing.rule\_based\_sentimental\_analysis@\spxentry{data\_preprocessing.rule\_based\_sentimental\_analysis}}\index{data\_preprocessing.rule\_based\_sentimental\_analysis@\spxentry{data\_preprocessing.rule\_based\_sentimental\_analysis}!module@\spxentry{module}}\index{text\_blob\_sentiment() (in module data\_preprocessing.rule\_based\_sentimental\_analysis)@\spxentry{text\_blob\_sentiment()}\spxextra{in module data\_preprocessing.rule\_based\_sentimental\_analysis}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.rule_based_sentimental_analysis.text_blob_sentiment}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.rule\_based\_sentimental\_analysis.}}\sphinxbfcode{\sphinxupquote{text\_blob\_sentiment}}}{\emph{\DUrole{n}{given\_sentence}}}{}
+\sphinxAtStartPar
+function to analyze the text blob sentiment
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{given\_sentence}} \textendash{} sentence
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+sentiment
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{vader\_sentiment() (in module data\_preprocessing.rule\_based\_sentimental\_analysis)@\spxentry{vader\_sentiment()}\spxextra{in module data\_preprocessing.rule\_based\_sentimental\_analysis}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.rule_based_sentimental_analysis.vader_sentiment}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.rule\_based\_sentimental\_analysis.}}\sphinxbfcode{\sphinxupquote{vader\_sentiment}}}{\emph{\DUrole{n}{given\_sentence}}}{}
+\sphinxAtStartPar
+function to analyze the vader sentiment
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{given\_sentence}} \textendash{} sentence
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+sentiment
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\phantomsection\label{\detokenize{index:module-data_preprocessing.utils}}\index{module@\spxentry{module}!data\_preprocessing.utils@\spxentry{data\_preprocessing.utils}}\index{data\_preprocessing.utils@\spxentry{data\_preprocessing.utils}!module@\spxentry{module}}\index{check\_record\_exist() (in module data\_preprocessing.utils)@\spxentry{check\_record\_exist()}\spxextra{in module data\_preprocessing.utils}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:data_preprocessing.utils.check_record_exist}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{data\_preprocessing.utils.}}\sphinxbfcode{\sphinxupquote{check\_record\_exist}}}{\emph{\DUrole{n}{database\_credentials}}, \emph{\DUrole{n}{article\_url}}, \emph{\DUrole{n}{processed}\DUrole{o}{=}\DUrole{default_value}{False}}}{}~\begin{quote}
+
+\sphinxAtStartPar
+function to check if a record exists in a database or not
+\end{quote}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{database\_credentials}} \textendash{} database credentials
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{article\_url}} \textendash{} article url
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{processed}} \textendash{} boolean value to process or not
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+boolean value
 
 \end{description}\end{quote}
 
@@ -432,10 +563,15 @@ json record
 \begin{sphinxtheindex}
 \let\bigletter\sphinxstyleindexlettergroup
 \bigletter{d}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.contractions}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.contractions}}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.data\_collection}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.data_collection}}
 \item\relax\sphinxstyleindexentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.data_collection_scripts.sitemap_crawlers}}
-\item\relax\sphinxstyleindexentry{data\_preprocessing.data\_preprocessing}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.data_preprocessing}}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.data\_preprocessing\_functions}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.data_preprocessing_functions}}
 \item\relax\sphinxstyleindexentry{data\_preprocessing.database\_records}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.database_records}}
 \item\relax\sphinxstyleindexentry{data\_preprocessing.news\_articles}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.news_articles}}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.processing\_records}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.processing_records}}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.rule\_based\_sentimental\_analysis}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.rule_based_sentimental_analysis}}
+\item\relax\sphinxstyleindexentry{data\_preprocessing.utils}\sphinxstyleindexpageref{index:\detokenize{module-data_preprocessing.utils}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}

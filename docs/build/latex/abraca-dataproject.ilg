@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
 Scanning style file ./python.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file abraca-dataproject.idx....done (30 entries accepted, 0 rejected).
-Sorting entries....done (153 comparisons).
-Generating output file abraca-dataproject.ind....done (90 lines written, 0 warnings).
+Scanning input file abraca-dataproject.idx....done (46 entries accepted, 0 rejected).
+Sorting entries....done (260 comparisons).
+Generating output file abraca-dataproject.ind....done (129 lines written, 0 warnings).
 Output written in abraca-dataproject.ind.
 Transcript written in abraca-dataproject.ilg.

@@ -124,3 +124,12 @@ CONTRACTION_MAP = {
     "you're": "you are",
     "you've": "you have"
 }
+
+
+def get_all_contractions():
+    """
+    Method to get all contraction
+
+    :return: dict
+    """
+    return CONTRACTION_MAP

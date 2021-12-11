@@ -1,10 +1,12 @@
-import data_preprocessing
-from database_records import ProcessedNewsArticle
-from rule_based_sentimental_analysis import text_blob_sentiment, vader_sentiment
+from .data_preprocessing_functions import remove_html_tags, lower_text, remove_urls, remove_accented_chars, \
+    expand_contractions, remove_special_characters, remove_stopwords, stemming_text, \
+    find_persons, named_entity_recognition
+from .database_records import ProcessedNewsArticle
+from .rule_based_sentimental_analysis import text_blob_sentiment, vader_sentiment
 import pymongo
 from mongoengine import connect, disconnect
 import yaml
-from utils import check_record_exist
+from .utils import check_record_exist
 
 
 def process_database_records(database_connection_params):
@@ -40,14 +42,14 @@ def process_database_records(database_connection_params):
                 article_text = document['article_text']
 
                 # data pre-processing block
-                article_text = data_preprocessing.remove_html_tags(article_text)
-                article_text = data_preprocessing.lower_text(article_text)
-                article_text = data_preprocessing.remove_urls(article_text)
-                article_text = data_preprocessing.remove_accented_chars(article_text)
-                article_text = data_preprocessing.expand_contractions(article_text)
-                article_text = data_preprocessing.remove_special_characters(article_text)
-                article_text = data_preprocessing.remove_stopwords(article_text)
-                article_text = data_preprocessing.stemming_text(article_text)
+                article_text = remove_html_tags(article_text)
+                article_text = lower_text(article_text)
+                article_text = remove_urls(article_text)
+                article_text = remove_accented_chars(article_text)
+                article_text = expand_contractions(article_text)
+                article_text = remove_special_characters(article_text)
+                article_text = remove_stopwords(article_text)
+                article_text = stemming_text(article_text)
 
                 # making document for processed news article
                 current_article = ProcessedNewsArticle()
@@ -55,7 +57,7 @@ def process_database_records(database_connection_params):
                 current_article.cleaned_article_title = document['article_title']
 
                 original_article_authors = ",".join(document['article_authors'])
-                current_article.cleaned_article_authors = data_preprocessing.find_persons(original_article_authors)
+                current_article.cleaned_article_authors = find_persons(original_article_authors)
 
                 current_article.cleaned_article_published_date = document['article_published_date']
                 current_article.cleaned_images_link = document['images_link']
@@ -65,7 +67,7 @@ def process_database_records(database_connection_params):
 
                 # named entity recognition
                 current_article.cleaned_article_text = article_text
-                ner_results = data_preprocessing.named_entity_recognition(document['article_text'])
+                ner_results = named_entity_recognition(document['article_text'])
                 current_article.cleaned_recognized_entity = ner_results
 
                 current_article.cleaned_article_keywords = document['article_keywords']
@@ -86,8 +88,5 @@ def process_database_records(database_connection_params):
 if __name__ == '__main__':
     with open('config.yaml') as f:
         config_dict = yaml.safe_load(f)
-
-    process_database_records(config_dict['newyork_times_database_details'])
-    # process_database_records(config_dict['cnbc_database_details'])
 
 

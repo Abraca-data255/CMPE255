@@ -3,6 +3,14 @@ import pymongo
 
 
 def check_record_exist(database_credentials, article_url, processed=False):
+    """
+     function to check if a record exists in a database or not
+
+    :param database_credentials: database credentials
+    :param article_url: article url
+    :param processed: boolean value to process or not
+    :return: boolean value
+    """
     with pymongo.MongoClient(database_credentials['connection_string']) as client:
         # get the database
         database = client[database_credentials['db_name']]

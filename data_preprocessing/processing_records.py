@@ -1,4 +1,4 @@
-from database_records import ProcessedNewsArticle
+from .database_records import ProcessedNewsArticle
 from collections import Counter
 from mongoengine import connect, disconnect
 import yaml
@@ -66,6 +66,3 @@ def process_records(database_connection_params):
 if __name__ == '__main__':
     with open('config.yaml') as f:
         config_dict = yaml.safe_load(f)
-
-    # process_records(config_dict['newyork_times_database_details'])
-    process_records(config_dict['cnbc_database_details'])

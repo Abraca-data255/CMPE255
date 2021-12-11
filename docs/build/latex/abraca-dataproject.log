@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.23)  10 DEC 2021 00:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.23)  10 DEC 2021 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -923,25 +923,36 @@ File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 85.
- [1
-
-]
-LaTeX Font Info:    Try loading font information for TS1+qtm on input line 242.
+LaTeX Font Info:    Try loading font information for TS1+qtm on input line 135.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [2] [3]
-[4
+) [1
+
+] [2]
+[3] [4
 
 ]
 Chapter 2.
 [5] [6
 
 ]
-Overfull \hbox (82.3716pt too wide) in paragraph at lines 435--436
+Overfull \hbox (82.3716pt too wide) in paragraph at lines 568--569
 []\T1/txtt/m/n/10 data_preprocessing.data_collection_scripts.sitemap_crawlers\T
 1/qtm/m/n/10 ,
+ []
+
+
+Overfull \hbox (19.37178pt too wide) in paragraph at lines 569--570
+[]\T1/txtt/m/n/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10
+ ,
+ []
+
+
+Overfull \hbox (35.12173pt too wide) in paragraph at lines 573--574
+[]\T1/txtt/m/n/10 data_preprocessing.rule_based_sentimental_analysis\T1/qtm/m/n
+/10 ,
  []
 
 [7
@@ -952,213 +963,298 @@ Overfull \hbox (82.3716pt too wide) in paragraph at lines 435--436
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
+[]\T1/txtt/m/n/10 add_records_to_database() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in 
+mod-ule
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+[]\T1/txtt/m/n/10 check_record_exist() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-u
+le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
 []\T1/txtt/m/n/10 cnbc_sitemap() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Overfull \hbox (63.89746pt too wide) in paragraph at lines 8--10
+Overfull \hbox (63.89746pt too wide) in paragraph at lines 15--17
 \T1/qtm/m/it/10 data_preprocessing.data_collection_scripts.sitemap_crawlers\T1/
 qtm/m/n/10 ),
  []
 
 
-Overfull \hbox (79.8716pt too wide) in paragraph at lines 13--14
+Overfull \hbox (79.8716pt too wide) in paragraph at lines 24--25
 []\T1/txtt/m/n/10 data_preprocessing.data_collection_scripts.sitemap_crawlers 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
+Overfull \hbox (16.87178pt too wide) in paragraph at lines 26--27
+[]\T1/txtt/m/n/10 data_preprocessing.data_preprocessing_functions 
+ []
+
+
+Overfull \hbox (32.62173pt too wide) in paragraph at lines 34--35
+[]\T1/txtt/m/n/10 data_preprocessing.rule_based_sentimental_analysis 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 []\T1/txtt/m/n/10 expand_contractions() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-
 ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 41--43
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 []\T1/txtt/m/n/10 extract_rss_feeds() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ul
 e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 []\T1/txtt/m/n/10 extract_urls() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 45--47
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 []\T1/txtt/m/n/10 find_persons() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 50--52
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+[]\T1/txtt/m/n/10 get_all_contractions() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod
+-ule
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 []\T1/txtt/m/n/10 lemmatize_text() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 60--62
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 []\T1/txtt/m/n/10 lower_text() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 62--64
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Overfull \hbox (102.3716pt too wide) in paragraph at lines 46--48
+Overfull \hbox (102.3716pt too wide) in paragraph at lines 70--72
 []| \T1/txtt/m/n/10 data_preprocessing.data_collection_scripts.sitemap_crawlers
 \T1/qtm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Overfull \hbox (39.37178pt too wide) in paragraph at lines 72--73
+[]| \T1/txtt/m/n/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/
+10 ,
+ []
+
+
+Overfull \hbox (55.12173pt too wide) in paragraph at lines 76--77
+[]| \T1/txtt/m/n/10 data_preprocessing.rule_based_sentimental_analysis\T1/qtm/m
+/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 []\T1/txtt/m/n/10 named_entity_recognition() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in
  mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 81--83
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 []\T1/txtt/m/n/10 new_york_times_sitemap() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in m
 od-ule
  []
 
 
-Overfull \hbox (63.89746pt too wide) in paragraph at lines 56--58
+Overfull \hbox (63.89746pt too wide) in paragraph at lines 83--85
 \T1/qtm/m/it/10 data_preprocessing.data_collection_scripts.sitemap_crawlers\T1/
 qtm/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 []\T1/txtt/m/n/10 NewsArticles \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
  []
 
+[9
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 []\T1/txtt/m/n/10 parse_article() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+[]\T1/txtt/m/n/10 process_records() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+\T1/qtm/m/it/10 data_preprocessing.processing_records\T1/qtm/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
 []\T1/txtt/m/n/10 ProcessedNewsArticle \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
 
  []
 
 
-Overfull \hbox (3.62183pt too wide) in paragraph at lines 70--71
+Overfull \hbox (3.62183pt too wide) in paragraph at lines 99--100
 []\T1/txtt/m/n/10 ProcessedNewsArticle.MultipleObjectsReturned\T1/qtm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 []\T1/txtt/m/n/10 remove_accented_chars() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mo
 d-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 103--105
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 []\T1/txtt/m/n/10 remove_html_tags() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 105--107
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 []\T1/txtt/m/n/10 remove_special_characters() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 i
 n mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 107--109
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 []\T1/txtt/m/n/10 remove_stopwords() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 109--111
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 []\T1/txtt/m/n/10 remove_urls() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 111--113
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 []\T1/txtt/m/n/10 stemming_text() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
-\T1/qtm/m/it/10 data_preprocessing.data_preprocessing\T1/qtm/m/n/10 ),
+Overfull \hbox (17.95744pt too wide) in paragraph at lines 116--118
+\T1/qtm/m/it/10 data_preprocessing.data_preprocessing_functions\T1/qtm/m/n/10 )
+,
  []
 
-[9
 
-] [10
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+[]\T1/txtt/m/n/10 text_blob_sentiment() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-
+ule
+ []
+
+
+Overfull \hbox (30.62746pt too wide) in paragraph at lines 121--123
+\T1/qtm/m/it/10 data_preprocessing.rule_based_sentimental_analysis\T1/qtm/m/n/1
+0 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+[]\T1/txtt/m/n/10 vader_sentiment() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
+ []
+
+
+Overfull \hbox (30.62746pt too wide) in paragraph at lines 126--128
+\T1/qtm/m/it/10 data_preprocessing.rule_based_sentimental_analysis\T1/qtm/m/n/1
+0 ),
+ []
+
+[10
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
  (./abraca-dataproject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `abraca-dataproject.out' has not changed.
-(rerunfilecheck)             Checksum: 7B33344EF44F9C45BD650DEA96DDC6FA;582.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 443.
+(rerunfilecheck)             Checksum: D552DAF6077A6CDE8D47AE0C7CFA4DE0;582.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  ) 
 Here is how much of TeX's memory you used:
- 13666 strings out of 492616
- 195083 string characters out of 6129480
- 298591 words of memory out of 5000000
- 17229 multiletter control sequences out of 15000+600000
+ 13688 strings out of 492616
+ 195975 string characters out of 6129480
+ 299251 words of memory out of 5000000
+ 17240 multiletter control sequences out of 15000+600000
  47070 words of font info for 45 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,11n,45p,703b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,45p,732b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/l
 ocal/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}</usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2
@@ -1169,10 +1265,10 @@ nts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
 pe1/public/tex-gyre/qtmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
 ublic/txfonts/t1xbtt.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
 /txfonts/t1xtt.pfb>
-Output written on abraca-dataproject.pdf (14 pages, 157019 bytes).
+Output written on abraca-dataproject.pdf (14 pages, 161288 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

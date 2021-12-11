@@ -1,30 +1,46 @@
-\indexentry{module@\spxentry{module}!data\_preprocessing.data\_preprocessing@\spxentry{data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{data\_preprocessing.data\_preprocessing@\spxentry{data\_preprocessing.data\_preprocessing}!module@\spxentry{module}|hyperpage}{1}
-\indexentry{expand\_contractions() (in module data\_preprocessing.data\_preprocessing)@\spxentry{expand\_contractions()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{extract\_urls() (in module data\_preprocessing.data\_preprocessing)@\spxentry{extract\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{find\_persons() (in module data\_preprocessing.data\_preprocessing)@\spxentry{find\_persons()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{lemmatize\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{lemmatize\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{lower\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{lower\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{named\_entity\_recognition() (in module data\_preprocessing.data\_preprocessing)@\spxentry{named\_entity\_recognition()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{remove\_accented\_chars() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_accented\_chars()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{remove\_html\_tags() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_html\_tags()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{1}
-\indexentry{remove\_special\_characters() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_special\_characters()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{2}
-\indexentry{remove\_stopwords() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_stopwords()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{2}
-\indexentry{remove\_urls() (in module data\_preprocessing.data\_preprocessing)@\spxentry{remove\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{2}
-\indexentry{stemming\_text() (in module data\_preprocessing.data\_preprocessing)@\spxentry{stemming\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing}|hyperpage}{2}
-\indexentry{module@\spxentry{module}!data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{2}
-\indexentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}!module@\spxentry{module}|hyperpage}{2}
-\indexentry{cnbc\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{cnbc\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{2}
-\indexentry{new\_york\_times\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{new\_york\_times\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{1}
+\indexentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers@\spxentry{data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{cnbc\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{cnbc\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{1}
+\indexentry{new\_york\_times\_sitemap() (in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers)@\spxentry{new\_york\_times\_sitemap()}\spxextra{in module data\_preprocessing.data\_collection\_scripts.sitemap\_crawlers}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!data\_preprocessing.contractions@\spxentry{data\_preprocessing.contractions}|hyperpage}{1}
+\indexentry{data\_preprocessing.contractions@\spxentry{data\_preprocessing.contractions}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{get\_all\_contractions() (in module data\_preprocessing.contractions)@\spxentry{get\_all\_contractions()}\spxextra{in module data\_preprocessing.contractions}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!data\_preprocessing.data\_collection@\spxentry{data\_preprocessing.data\_collection}|hyperpage}{1}
+\indexentry{data\_preprocessing.data\_collection@\spxentry{data\_preprocessing.data\_collection}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{add\_records\_to\_database() (in module data\_preprocessing.data\_collection)@\spxentry{add\_records\_to\_database()}\spxextra{in module data\_preprocessing.data\_collection}|hyperpage}{1}
+\indexentry{module@\spxentry{module}!data\_preprocessing.data\_preprocessing\_functions@\spxentry{data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{1}
+\indexentry{data\_preprocessing.data\_preprocessing\_functions@\spxentry{data\_preprocessing.data\_preprocessing\_functions}!module@\spxentry{module}|hyperpage}{1}
+\indexentry{expand\_contractions() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{expand\_contractions()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{1}
+\indexentry{extract\_urls() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{extract\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{1}
+\indexentry{find\_persons() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{find\_persons()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{1}
+\indexentry{lemmatize\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{lemmatize\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{1}
+\indexentry{lower\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{lower\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{named\_entity\_recognition() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{named\_entity\_recognition()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{remove\_accented\_chars() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_accented\_chars()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{remove\_html\_tags() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_html\_tags()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{remove\_special\_characters() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_special\_characters()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{remove\_stopwords() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_stopwords()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{remove\_urls() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{remove\_urls()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
+\indexentry{stemming\_text() (in module data\_preprocessing.data\_preprocessing\_functions)@\spxentry{stemming\_text()}\spxextra{in module data\_preprocessing.data\_preprocessing\_functions}|hyperpage}{2}
 \indexentry{module@\spxentry{module}!data\_preprocessing.database\_records@\spxentry{data\_preprocessing.database\_records}|hyperpage}{2}
 \indexentry{data\_preprocessing.database\_records@\spxentry{data\_preprocessing.database\_records}!module@\spxentry{module}|hyperpage}{2}
 \indexentry{NewsArticles (class in data\_preprocessing.database\_records)@\spxentry{NewsArticles}\spxextra{class in data\_preprocessing.database\_records}|hyperpage}{2}
 \indexentry{NewsArticles.DoesNotExist@\spxentry{NewsArticles.DoesNotExist}|hyperpage}{2}
-\indexentry{NewsArticles.MultipleObjectsReturned@\spxentry{NewsArticles.MultipleObjectsReturned}|hyperpage}{2}
-\indexentry{ProcessedNewsArticle (class in data\_preprocessing.database\_records)@\spxentry{ProcessedNewsArticle}\spxextra{class in data\_preprocessing.database\_records}|hyperpage}{2}
-\indexentry{ProcessedNewsArticle.DoesNotExist@\spxentry{ProcessedNewsArticle.DoesNotExist}|hyperpage}{2}
-\indexentry{ProcessedNewsArticle.MultipleObjectsReturned@\spxentry{ProcessedNewsArticle.MultipleObjectsReturned}|hyperpage}{2}
-\indexentry{module@\spxentry{module}!data\_preprocessing.news\_articles@\spxentry{data\_preprocessing.news\_articles}|hyperpage}{2}
-\indexentry{data\_preprocessing.news\_articles@\spxentry{data\_preprocessing.news\_articles}!module@\spxentry{module}|hyperpage}{2}
-\indexentry{extract\_rss\_feeds() (in module data\_preprocessing.news\_articles)@\spxentry{extract\_rss\_feeds()}\spxextra{in module data\_preprocessing.news\_articles}|hyperpage}{2}
-\indexentry{parse\_article() (in module data\_preprocessing.news\_articles)@\spxentry{parse\_article()}\spxextra{in module data\_preprocessing.news\_articles}|hyperpage}{2}
+\indexentry{NewsArticles.MultipleObjectsReturned@\spxentry{NewsArticles.MultipleObjectsReturned}|hyperpage}{3}
+\indexentry{ProcessedNewsArticle (class in data\_preprocessing.database\_records)@\spxentry{ProcessedNewsArticle}\spxextra{class in data\_preprocessing.database\_records}|hyperpage}{3}
+\indexentry{ProcessedNewsArticle.DoesNotExist@\spxentry{ProcessedNewsArticle.DoesNotExist}|hyperpage}{3}
+\indexentry{ProcessedNewsArticle.MultipleObjectsReturned@\spxentry{ProcessedNewsArticle.MultipleObjectsReturned}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!data\_preprocessing.news\_articles@\spxentry{data\_preprocessing.news\_articles}|hyperpage}{3}
+\indexentry{data\_preprocessing.news\_articles@\spxentry{data\_preprocessing.news\_articles}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{extract\_rss\_feeds() (in module data\_preprocessing.news\_articles)@\spxentry{extract\_rss\_feeds()}\spxextra{in module data\_preprocessing.news\_articles}|hyperpage}{3}
+\indexentry{parse\_article() (in module data\_preprocessing.news\_articles)@\spxentry{parse\_article()}\spxextra{in module data\_preprocessing.news\_articles}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!data\_preprocessing.processing\_records@\spxentry{data\_preprocessing.processing\_records}|hyperpage}{3}
+\indexentry{data\_preprocessing.processing\_records@\spxentry{data\_preprocessing.processing\_records}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{process\_records() (in module data\_preprocessing.processing\_records)@\spxentry{process\_records()}\spxextra{in module data\_preprocessing.processing\_records}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!data\_preprocessing.rule\_based\_sentimental\_analysis@\spxentry{data\_preprocessing.rule\_based\_sentimental\_analysis}|hyperpage}{3}
+\indexentry{data\_preprocessing.rule\_based\_sentimental\_analysis@\spxentry{data\_preprocessing.rule\_based\_sentimental\_analysis}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{text\_blob\_sentiment() (in module data\_preprocessing.rule\_based\_sentimental\_analysis)@\spxentry{text\_blob\_sentiment()}\spxextra{in module data\_preprocessing.rule\_based\_sentimental\_analysis}|hyperpage}{3}
+\indexentry{vader\_sentiment() (in module data\_preprocessing.rule\_based\_sentimental\_analysis)@\spxentry{vader\_sentiment()}\spxextra{in module data\_preprocessing.rule\_based\_sentimental\_analysis}|hyperpage}{3}
+\indexentry{module@\spxentry{module}!data\_preprocessing.utils@\spxentry{data\_preprocessing.utils}|hyperpage}{3}
+\indexentry{data\_preprocessing.utils@\spxentry{data\_preprocessing.utils}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{check\_record\_exist() (in module data\_preprocessing.utils)@\spxentry{check\_record\_exist()}\spxextra{in module data\_preprocessing.utils}|hyperpage}{3}

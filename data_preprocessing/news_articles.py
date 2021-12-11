@@ -48,6 +48,7 @@ def parse_article(article_url):
 def extract_rss_feeds(xml_url, *header_value):
     """
     function to extract all article web links from an xml file
+
     :param xml_url: xml link
     """
     if len(header_value):

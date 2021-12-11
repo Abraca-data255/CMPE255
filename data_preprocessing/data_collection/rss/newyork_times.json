@@ -1,9 +1,0 @@
-{
-  "Africa": "https://rss.nytimes.com/services/xml/rss/nyt/Africa.xml",
-  "Americas": "https://rss.nytimes.com/services/xml/rss/nyt/Americas.xml",
-  "Politics": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
-  "MostViewed": "https://rss.nytimes.com/services/xml/rss/nyt/MostViewed.xml",
-  "Economy": "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
-  "Business": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
-  "US": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
-}
