@@ -50,10 +50,33 @@ def index(request):
 
     total_records = newyork_records_count + cnbc_records_count
 
+    database_connection_params = config_file['cnbc_database_details']
+
+    # connect to database connection through mongoengine
+    connect(db=database_connection_params['db_name'],
+            username=database_connection_params['user_name'],
+            password=database_connection_params['password'],
+            host=database_connection_params['connection_string'])
+
+    all_articles_cnbc = NewsArticles.objects()[:50]
+    disconnect()
+
+    database_connection_params = config_file['newyork_times_database_details']
+    # connect to database connection through mongoengine
+    connect(db=database_connection_params['db_name'],
+            username=database_connection_params['user_name'],
+            password=database_connection_params['password'],
+            host=database_connection_params['connection_string'])
+
+    all_articles_newyork = NewsArticles.objects()[:50]
+    disconnect()
+
     context = {
         "newyork_times_records": newyork_records_count,
         "cnbc_records": cnbc_records_count,
-        "total_records": total_records
+        "total_records": total_records,
+        "all_articles_cnbc": all_articles_cnbc,
+        "all_articles_newyork": all_articles_newyork
     }
 
     return render(request, template, context)
