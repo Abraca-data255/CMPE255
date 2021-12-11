@@ -1,4 +1,10 @@
-# CMPE255 Project 
+# CMPE255 Project
+
+**Abraca-data**
+Team members -
+  1. Aryan Jadon
+  2. Yash Kamtekar
+  3. Swathi Anandram
 
 This Repo Contains the CMPE255 Project Implementation.
 Project Implementation is further divided into modules.
